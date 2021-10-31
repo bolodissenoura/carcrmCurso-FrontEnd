@@ -1,7 +1,12 @@
-import { actionTypes } from '../actions/loading.action'
+import { actionTypes } from '../actions/notify.action'
+
 const initialState = {
-    open : false,
-    msg: 'Carregando...'
+    open: true,
+    horizontal: 'center',
+    vertical: 'top',
+    class: 'success',
+    time: 3000,
+    msg: 'Dados atualizados',
 }
 
 export default (state = initialState, { type, payload }) => {

@@ -4,6 +4,7 @@ import { store } from './store/store'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Routes from "./routes"
+import { Loading } from "./view/components";
 
 const theme = createMuiTheme({
 
@@ -29,6 +30,7 @@ const theme = createMuiTheme({
 const App = () => (
   <Provider store={store}>
     <ThemeProvider theme={theme}>
+      <Loading />
       <Routes/>
     </ThemeProvider>
   </Provider>

@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import { store } from './store/store'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './global.css'
 import Routes from "./routes"
 import { Loading } from "./view/components";
 

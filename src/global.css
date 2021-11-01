@@ -1,3 +1,9 @@
-.outline-none{
+*{
     outline:none !important;
+}
+.bg-change1{
+    background-color: #1E1E2F !important;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: 1px 1px 200px rgb(195, 121, 219);
 }

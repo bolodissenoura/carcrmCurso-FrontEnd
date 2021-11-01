@@ -5,7 +5,7 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './global.css'
 import Routes from "./routes"
-import { Loading, Notify } from "./view/components";
+import { Loading, Notify, Alert, Confirm } from "./view/components";
 
 const theme = createMuiTheme({
 
@@ -32,7 +32,13 @@ const App = () => (
   <Provider store={store}>
     <ThemeProvider theme={theme}>
       <Notify />
+      <Confirm
+       open={true}
+       onClose={() => alert('close')}
+       onConfirm={() => alert('confirm')}
+      />
       <Loading />
+      <Alert />
       <Routes/>
     </ThemeProvider>
   </Provider>

@@ -11,7 +11,7 @@ const theme = createMuiTheme({
 
     palette: {
       primary: {
-        main: '#ad2b5f'
+        main: '#F6B900'
       },
     },
     props:{
@@ -33,7 +33,7 @@ const App = () => (
     <ThemeProvider theme={theme}>
       <Notify />
       <Confirm
-       open={true}
+       open={false}
        onClose={() => alert('close')}
        onConfirm={() => alert('confirm')}
       />
